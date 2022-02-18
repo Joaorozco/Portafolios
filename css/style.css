@@ -31,7 +31,7 @@
 
 #btn-seccion-inicio:hover{
     background-color:rgba(243, 1, 134, 0.151);
-    color: #d64475;
+    color: rgba(243, 1, 134, 0.692);
     border: 1px solid rgba(0, 0, 0, 0.418);
     transition: 1s;
 }
@@ -73,7 +73,6 @@
 /* -------------------------------- */
 
 #section-skills{
-    height: 600px;
     margin-top: 20px;
     border-radius: 20px;
     box-shadow: 10px -2px 20px #0000008e;
@@ -88,4 +87,10 @@
 
 #container-skills{
     padding-top: 30px;
+}
+
+#section-skills dt{
+    font-size: 20px;
+    padding: 10px;
+    font-weight: bold;
 }
