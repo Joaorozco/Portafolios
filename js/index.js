@@ -10,6 +10,7 @@ ScrollReveal().reveal(sectionInicio, {
         y:-180
     }
 });
+
 ScrollReveal().reveal(sectionSobreMi, {
     duration: 1000,
     scale: 0.5
