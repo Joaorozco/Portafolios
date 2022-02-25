@@ -99,7 +99,6 @@
     border-radius: 20px;
     box-shadow: 10px -2px 20px #0000008e;
     padding: 30px;
-    background-color: #f8af75;
 }
 
 #section-proyectos h1{
@@ -108,4 +107,21 @@
     font-weight: bold;
     text-decoration: underline 2px rgba(0, 0, 0, 0.692);
     letter-spacing: 1px;
+}
+
+/* -------------------------------- */
+/* -----------Footer--------------- */
+/* -------------------------------- */
+
+#footer{
+    height: 100px;
+    margin-top: 20px;
+    border-radius:20px 20px 0px 0px;
+    box-shadow: 3px -5px 2px #000000a6;
+    padding: 30px;
+}
+
+#footer p{
+    font-weight: bold;
+
 }
