@@ -110,18 +110,42 @@
 }
 
 /* -------------------------------- */
+/* -----------Contacto------------- */
+/* -------------------------------- */
+
+#section-contacto{
+    background-color: #220b2c;
+    margin-top: 20px;
+    border-radius: 20px;
+    box-shadow: 10px -2px 20px #0000008e;
+    padding: 30px;
+}
+
+#section-contacto h1{
+    color: rgba(243, 1, 134, 0.692);
+    font-size: 40px;
+    font-weight: bold;
+    text-decoration: underline 2px rgba(243, 1, 134, 0.336);
+}
+
+#container-contacto{
+    margin-left: auto;
+    margin-right: auto;
+}
+/* -------------------------------- */
 /* -----------Footer--------------- */
 /* -------------------------------- */
 
 #footer{
-    height: 100px;
+    background-color: #220b2c;
+    height: 70px;
     margin-top: 20px;
     border-radius:20px 20px 0px 0px;
     box-shadow: 3px -5px 2px #000000a6;
-    padding: 30px;
+    padding: 20px;
 }
 
 #footer p{
     font-weight: bold;
-
+    color: #fff;
 }
