@@ -82,11 +82,11 @@
 
 #section-sobre-mi h3{
     color: #fff;
-    font-weight: lighter;
+    font-weight: bold;
 }
 
 #section-sobre-mi p{
-    color: aliceblue;
+    color: rgb(255, 255, 255);
     font-size: 25px;
     text-align: justify;
     margin: 20px;
@@ -166,5 +166,5 @@
 
 #footer p{
     font-weight: bold;
-    color: rgb(0, 0, 0);
+    color: rgb(58, 57, 57);
 }

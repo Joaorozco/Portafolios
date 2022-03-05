@@ -28,32 +28,58 @@ const templateAddHeader = header.innerHTML = templateHeader;
 let sectionInicio = document.querySelector("#section-inicio");
 let sectionSobreMi = document.querySelector("#section-sobre-mi");
 let sectionSkills = document.querySelector("#section-skills");
+let sectionProyecto = document.querySelector("#section-proyectos")
+let sectionContacto = document.querySelector("#section-contacto")
 
 ScrollReveal().reveal(sectionInicio, {
-    duration: 500,
+    duration: 1500,
     scale: 0.5,
     rotate: {
-        x:-180,
+        x: 360,
         y:-180
     }
 });
 
 ScrollReveal().reveal(sectionSobreMi, {
-    duration: 1000,
-    scale: 0.5
+    duration: 1500,
+    scale: 0.5,
+    rotate: {
+        x: -360,
+        y: 180,
+    }
 });
 
-ScrollReveal().reveal(sectionSkills,{
-    duration: 1000,
-    scale: 0.5
+// ScrollReveal().reveal(sectionSkills,{
+//     duration: 1000,
+//     scale: 0.5,
+//     rotate: {
+//         x: -360,
+//         y: 180,
+//     }
+// })
+
+ScrollReveal().reveal(sectionProyecto,{
+    duration: 1500,
+    scale: 0.5,
+    rotate: {
+        x: 360,
+        y: -180,
+    }
+})
+
+ScrollReveal().reveal(sectionContacto,{
+    duration: 1500,
+    scale: 0.5,
+    rotate: {
+        x: -360,
+        y: 180,
+    }
 })
 
 const maquina = document.querySelector('.maquina-escribir');
-console.log(maquina);
 
 const maquinaDeEscribir = (text = '', tiempo = 200, etiqueta = '') => {
     let arrayLetter = text.split('');
-    console.log(arrayLetter);
     etiqueta.innerHTML = '';
     let cont = 0;
     let escribir = setInterval(function() {
@@ -64,4 +90,4 @@ const maquinaDeEscribir = (text = '', tiempo = 200, etiqueta = '') => {
         }
     },tiempo)
 }
-maquinaDeEscribir("Joaquin Orozco", 300, maquina)
+maquinaDeEscribir("Joaquin Orozco", 200, maquina)
