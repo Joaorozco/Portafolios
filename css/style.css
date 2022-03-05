@@ -1,5 +1,5 @@
 *{
-    box-sizing: border-box;
+    box-sizing: border-box;   
 }
 
 #nav-items a:hover{
@@ -10,30 +10,55 @@
     padding: 30px;
     border: 1px solid rgba(206, 206, 206, 0.541);
     border-radius: 20px;
-    box-shadow: 10px -2px 20px rgba(121, 121, 121, 0.479);
+    box-shadow: 10px -2px 20px rgba(121, 121, 121, 0.253);
 }
 
 #seccion-incio h1{
-    color: rgb(243, 1, 134);
+    color: #ff637d;
     font-size: 80px;
     font-weight: bold;
 }
 
+/* .maquina-escribir{
+    position: relative;
+}
+
+.maquina-escribir::after{
+    content: '';
+    border-left: 3px solid black;
+    background: #fff;
+    right: 0;
+    height: 100%;
+    position: absolute;
+    animation: maquinaescribir 3s infinite alternate-reverse steps(16);
+} */
+/* 
+@keyframes maquinaescribir {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+} */
+
 #seccion-incio h3{
     font-size: 30px;
+    color: rgb(119, 118, 118);
 }
 
 #btn-seccion-inicio{
     font-size: 25px;
     font-weight: bold;
+    color: #000;
     
 }
 
 #btn-seccion-inicio:hover{
     background-color:rgba(243, 1, 134, 0.151);
     color: rgba(243, 1, 134, 0.692);
-    border: 1px solid rgba(0, 0, 0, 0.418);
-    transition: 1s;
+    border: 1px solid rgb(255, 255, 255);
+    transition: .5s;
 }
 
 /* -------------------------------- */
@@ -41,7 +66,7 @@
 /* -------------------------------- */
 
 #section-sobre-mi{
-    background-color: #220b2c;
+    background-color: #ff637d;
     padding: 30px;
     border: 1px solid rgba(255, 255, 255, 0.671);
     border-radius: 20px;
@@ -50,10 +75,9 @@
 }
 
 #section-sobre-mi h1{
-    color: rgba(243, 1, 134, 0.692);
+    color: rgb(0, 0, 0);
     font-size: 40px;
     font-weight: bold;
-    text-decoration: underline 2px rgba(243, 1, 134, 0.336);
 }
 
 #section-sobre-mi h3{
@@ -76,7 +100,6 @@
 #section-skills h1{
     font-size: 40px;
     font-weight: bold;
-    text-decoration: underline 2px rgba(243, 1, 134, 0.336);
 }
 
 #container-skills{
@@ -99,13 +122,13 @@
     border-radius: 20px;
     box-shadow: 10px -2px 20px #0000008e;
     padding: 30px;
+    /* background-color: #161616; */
 }
 
 #section-proyectos h1{
-    color: rgb(0, 0, 0);
+    color: #ff637d;
     font-size: 40px;
     font-weight: bold;
-    text-decoration: underline 2px rgba(0, 0, 0, 0.692);
     letter-spacing: 1px;
 }
 
@@ -114,7 +137,7 @@
 /* -------------------------------- */
 
 #section-contacto{
-    background-color: #220b2c;
+    background-color: #ff637d;
     margin-top: 20px;
     border-radius: 20px;
     box-shadow: 10px -2px 20px #0000008e;
@@ -122,10 +145,9 @@
 }
 
 #section-contacto h1{
-    color: rgba(243, 1, 134, 0.692);
+    color: rgb(0, 0, 0);
     font-size: 40px;
     font-weight: bold;
-    text-decoration: underline 2px rgba(243, 1, 134, 0.336);
 }
 
 #container-contacto{
@@ -137,15 +159,12 @@
 /* -------------------------------- */
 
 #footer{
-    background-color: #220b2c;
     height: 70px;
     margin-top: 20px;
-    border-radius:20px 20px 0px 0px;
-    box-shadow: 3px -5px 2px #000000a6;
     padding: 20px;
 }
 
 #footer p{
     font-weight: bold;
-    color: #fff;
+    color: rgb(0, 0, 0);
 }
