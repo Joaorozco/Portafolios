@@ -101,7 +101,7 @@ body{
 #section-sobre-mi{
     position: relative;
     margin-left: 16.3rem;
-    min-height: 100vh;
+    min-height: 100%;
 }
 
 #section-sobre-mi h1{
@@ -155,10 +155,9 @@ body{
 /* -------------------------------- */
 
 #section-proyectos{
-    margin-top: 20px;
-    border-radius: 20px;
-    padding: 30px;
-    /* background-color: #161616; */
+    position: relative;
+    margin-left: 16.3rem;
+    min-height: 100%;
 }
 
 #section-proyectos h1{
@@ -173,21 +172,21 @@ body{
 /* -------------------------------- */
 
 #section-contacto{
-    margin-top: 20px;
-    border-radius: 20px;
-    padding: 30px;
+    position: relative;
+    margin-left: 16.3rem;
+    min-height: 100%;
 }
 
 #section-contacto h1{
-    color: rgb(0, 0, 0);
+    color: #ff637d;
     font-size: 40px;
     font-weight: bold;
 }
-
+/* 
 #container-contacto{
     margin-left: auto;
     margin-right: auto;
-}
+} */
 /* -------------------------------- */
 /* -----------Footer--------------- */
 /* -------------------------------- */
