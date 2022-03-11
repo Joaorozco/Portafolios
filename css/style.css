@@ -1,22 +1,70 @@
 *{
     box-sizing: border-box;   
+    background-color: #1b1b1b;
 }
 
-#nav-items a:hover{
-    text-decoration: overline 1px #000;
+body{
+    display: block;
 }
 
-#seccion-incio{
-    padding: 30px;
-    border: 1px solid rgba(206, 206, 206, 0.541);
-    border-radius: 20px;
-    box-shadow: 10px -2px 20px rgba(121, 121, 121, 0.253);
+#header{
+    border-right: 1px solid #444444;
+    width: 16.3rem;
+    position: fixed;
+    height: 100vh;
+    overflow: hidden;
+    transition: all 0.4s ease-in-out 0s;
+}
+
+#header nav{
+    width: 100%;
+}
+
+#header ul{
+    list-style: none;
+    font-size: 20px;
+    padding: 20px 24px;
+    text-align: center;
+}
+
+#header ul li{
+    padding-top: 24px;
+}
+
+#header a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* -------------------------------- */
+/* -----------root----------------- */
+/* -------------------------------- */
+#root{
+    position: absolute;
+    min-height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    /* opacity: 0.4; */
+    z-index: -1;
+}
+
+
+/* -------------------------------- */
+/* -----------Section inicio------- */
+/* -------------------------------- */
+#section-inicio{
+    position: relative;
+    margin-left: 16.3rem;
+    min-height: 100vh;
 }
 
 #seccion-incio h1{
     color: #ff637d;
     font-size: 80px;
     font-weight: bold;
+    margin-top: 20%;
 }
 
 /* .maquina-escribir{
@@ -47,35 +95,17 @@
     color: rgb(119, 118, 118);
 }
 
-#btn-seccion-inicio{
-    font-size: 25px;
-    font-weight: bold;
-    color: #000;
-    
-}
-
-#btn-seccion-inicio:hover{
-    background-color:rgba(243, 1, 134, 0.151);
-    color: rgba(243, 1, 134, 0.692);
-    border: 1px solid rgb(255, 255, 255);
-    transition: .5s;
-}
-
 /* -------------------------------- */
 /* ---------------Sobre mi--------- */
 /* -------------------------------- */
-
 #section-sobre-mi{
-    background-color: #ff637d;
-    padding: 30px;
-    border: 1px solid rgba(255, 255, 255, 0.671);
-    border-radius: 20px;
-    box-shadow: 10px -2px 20px #0000008e;
-    margin-top: 20px;
+    position: relative;
+    margin-left: 16.3rem;
+    min-height: 100vh;
 }
 
 #section-sobre-mi h1{
-    color: rgb(0, 0, 0);
+    color: #ff637d;
     font-size: 40px;
     font-weight: bold;
 }
@@ -97,13 +127,20 @@
 /* -------------------------------- */
 /* -----------Skills--------------- */
 /* -------------------------------- */
+#section-kills{
+    position: relative;
+    margin-left: 16.3rem;
+    min-height: 100vh;
+}
+
 #section-skills h1{
     font-size: 40px;
     font-weight: bold;
+    color: #ff637d;
 }
 
 #container-skills{
-    padding-top: 30px;
+    margin-top: 25px;
 }
 
 #section-skills dt{
@@ -120,7 +157,6 @@
 #section-proyectos{
     margin-top: 20px;
     border-radius: 20px;
-    box-shadow: 10px -2px 20px #0000008e;
     padding: 30px;
     /* background-color: #161616; */
 }
@@ -137,10 +173,8 @@
 /* -------------------------------- */
 
 #section-contacto{
-    background-color: #ff637d;
     margin-top: 20px;
     border-radius: 20px;
-    box-shadow: 10px -2px 20px #0000008e;
     padding: 30px;
 }
 
@@ -159,12 +193,14 @@
 /* -------------------------------- */
 
 #footer{
-    height: 70px;
+    height:70px;
     margin-top: 20px;
     padding: 20px;
+    border-top: 1px solid #444444 ;
 }
 
 #footer p{
     font-weight: bold;
-    color: rgb(58, 57, 57);
+    color: rgb(119, 118, 118);
+    color: #f794a4;
 }

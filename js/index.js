@@ -1,31 +1,86 @@
-const templateHeader = `
-<nav class="navbar navbar-expand-lg bg-dark">
-    <div class="container">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse float-end" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="nav-items">
-            <li class="nav-item">
-                <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link active text-light" aria-current="page" href="#">Sobre mi</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link active text-light" aria-current="page" href="#">Contacto</a>
-            </li>
-            </ul>
-        </div>
-    </div>
-</nav>`;
-const header = document.querySelector("#header");
-const templateAddHeader = header.innerHTML = templateHeader;
+const root = document.querySelector("#root");
 
+function ajax(url, metodo="get") {
+    let httpMetodo = metodo;
+    let xhr = new XMLHttpRequest;
+    xhr.open(httpMetodo, url);
+    xhr.send();
+    // console.log(xhr.response);
+
+    return xhr
+}
+
+(function home(){
+    let xhr = ajax('home.html')
+    // console.log(xhr);
+
+    xhr.addEventListener('load', () => {
+        root.innerHTML = xhr.response;
+
+        // const maquina = document.querySelector('.maquina-escribir');
+        // const maquinaDeEscribir = (text = '', tiempo = 200, etiqueta = '') => {
+        // let arrayLetter = text.split('');
+        // etiqueta.innerHTML = '';
+        // let cont = 0;
+        // let escribir = setInterval(function() {
+        //     etiqueta.innerHTML += arrayLetter[cont];
+        //     cont++;
+        //     if (cont === arrayLetter.length) {
+        //         clearInterval(escribir);
+        //         }
+        //     },tiempo)
+        // }
+        // maquinaDeEscribir("Joaquin Orozco", 200, maquina)
+    })
+})();
+
+(function getPlatillaConHistoryHash(){
+    let hash = location.hash;
+    // console.log(root.hash);
+    let archivo = (hash) ? hash.slice(1) + '.html' : 'home.html';
+    let xhr = ajax(archivo);
+    xhr.addEventListener('load', () => { 
+        if (xhr.status === 200) {
+            root.innerHTML = xhr.response
+        }
+    })
+
+    let links = document.querySelectorAll('a')
+    console.log(links);
+
+    links.forEach(link => {
+        link.addEventListener('click', e => {
+            e.preventDefault();
+            let id = link.id
+            console.log(id);
+            location.hash = id;
+        })
+    });
+
+    window.addEventListener('hashchange', () => {
+        let hash = location.hash
+        // console.log(hash);
+
+        let archivo = hash ? hash.slice(1) + '.html' : 'index.html';
+
+        let xhr = ajax(archivo)
+        xhr.addEventListener('load', () =>{
+            if (xhr.status == 200) {
+
+                root.innerHTML = xhr.response
+            }
+        })
+    })
+    
+})();
+
+// ------------------------------------------------------------
+// ------------------------------------------------------------
 // ---------------------ANIMATION------------------------------
+// ------------------------------------------------------------
+// ------------------------------------------------------------
 
-
-let sectionInicio = document.querySelector("#section-inicio");
+let sectionInicio = document.querySelector('#section-inicio')
 let sectionSobreMi = document.querySelector("#section-sobre-mi");
 let sectionSkills = document.querySelector("#section-skills");
 let sectionProyecto = document.querySelector("#section-proyectos")
@@ -76,18 +131,4 @@ ScrollReveal().reveal(sectionContacto,{
     }
 })
 
-const maquina = document.querySelector('.maquina-escribir');
 
-const maquinaDeEscribir = (text = '', tiempo = 200, etiqueta = '') => {
-    let arrayLetter = text.split('');
-    etiqueta.innerHTML = '';
-    let cont = 0;
-    let escribir = setInterval(function() {
-        etiqueta.innerHTML += arrayLetter[cont];
-        cont++;
-        if (cont === arrayLetter.length) {
-            clearInterval(escribir);
-        }
-    },tiempo)
-}
-maquinaDeEscribir("Joaquin Orozco", 200, maquina)

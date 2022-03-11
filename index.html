@@ -10,120 +10,106 @@
     <title>Portafolios</title>
 </head>
 <body>
-        <header id="header">
-            <!-- <nav class="navbar navbar-expand-lg navbar-light fixe-top">
-                <div class="container">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="nav-items">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Sobre mi</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Contacto</a>
-                    </li>
+            <header id="header">
+                <nav>
+                    <ul>
+                        <a class="links" id="home" href="/">
+                            <li>Home</li>
+                        </a> 
+                        <a class="links" id="sobre-mi" href="/">
+                            <li>Sobre mí</li>
+                        </a>
+                        <a class="links" id="proyectos" href="/">
+                            <li>Proyectos</li>
+                        </a>
+                        <a class="links" id="contacto" href="/">
+                            <li>Contacto</li>
+                        </a>
                     </ul>
-                </div>
-                </div>
-            </nav> -->
-        </header>
-        <section class="container" id="section-inicio">
-            <div class="row">
-                <div class="col-12" id="seccion-incio">
-                    <h1 class="text-center" id="titulo-inicio">Hola! soy <span class="maquina-escribir"></span></h1>
-                    <h3 class="text-center">Desarrolador Front-end / Maquetador Web</h3>
-                    <img class="img-fluid" src="img/kisspng-front-end-web-development-web-developer-front-and-developer-5ad00d74750247.5716044915235843724793.png">
-                    <button id="btn-seccion-inicio" type="submit" class="btn float-end">CONTÁCTEME</button>
-                </div>
-            </div>
-        </section>
-
-            <section class="container" id="section-sobre-mi">
-            <div class="row">
-                <div class="col-6">
-                    <h1 class="text-center" id="titulo-sobre-mi">Sobre mí</h1>
-                    <h3 class="text-center" id="subtitulo-sobre-mi">¿Qué servicio hago?</h3>
-                    <p class="col-12 text-center">Creo, desarrollo, actualizo y mantengo páginas y portales web. <br> 
-                        Sigo aprendiendo y adquiriendo nuevas habilidades día a día en función a las actuales y futuras demandas y tendencias tecnológicas en el campo de desarrollo de aplicaciones web. <br>
-                        Me apaciona el mundo de la programación y ofrezco en cada proyecto total atención y dedicación.</p>
-                </div>
-                        <div class="col-6" id="section-skills">
-                            <h1 class="text-center">Skills</h1>
-                            <div class="container-fluid" id="container-skills">
-                                <dl>
-                                    <dt>Desarrollo:</dt>
-                                    <dd><img class="img col-2" id="skill-html" src="img/html5.svg">
-                                        <img class="img col-2" src="img/javascript.svg">
-                                        <img class="img col-2" src="img/css3.svg">
-                                    </dd>
-                                    <dt>Framework:</dt>
-                                    <dd>
-                                        <img class="img col-2" src="img/bootstrap-5-1.svg">
-                                    </dd>
-                                    <dt>Tools:</dt>
-                                    <dd>
-                                        <img class="img col-2" src="img/git.svg">
-                                        <img class="img col-2" src="img/visual-studio-code-1.svg">
-                                    </dd>
-                                </dl>
-                            </div>
-                        </div>
-            </div>
-        </section>
-
-        <section class="container" id="section-proyectos">
-            <div class="row">
-                <div id="carouselExampleControls" class="carousel slide col-12 container" data-bs-ride="carousel">
-                    <h1 class="text-center">Portafolios/Proyectos</h1>
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img src="img/AppWork.png" class="d-block w-100" alt="...">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="img/Gomeria2000.png" class="d-block w-100" alt="...">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="img/WeatherApp.png" class="d-block w-100" alt="...">
-                      </div>
+                </nav>
+                <footer class="container-fluid position-absolute bottom-0 end-0" id="footer">
+                    <div class="row">
+                        <p class="text-center">Hecho por Joaquín Orozco</p>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" id="previous-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                      <span class="carousel-control-next-icon" id="next-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-            </div>
-        </section>
+                </footer>
+            </header>
 
-        <section class="container" id="section-contacto">
-            <h1 class="text-center">Contáctame</h1>
-            <div class="row col-6" id="container-contacto">
-                <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label text-light">Email:</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            <section id="root">
+                
+            </section>
+            <!-- <section class="container-fluid col-10 float-end" id="section-sobre-mi">
+                <div class="row">
+                    <div class="col-6">
+                        <h1 class="text-center" id="titulo-sobre-mi">Sobre mí</h1>
+                        <h3 class="text-center" id="subtitulo-sobre-mi">¿Qué servicio hago?</h3>
+                        <p class="col-12 text-center">Creo, desarrollo, actualizo y mantengo páginas y portales web. <br>
+                            Sigo aprendiendo y adquiriendo nuevas habilidades día a día en función a las actuales y futuras demandas y tendencias tecnológicas en el campo de desarrollo de aplicaciones web. <br>
+                            Me apaciona el mundo de la programación y ofrezco en cada proyecto total atención y dedicación.</p>
+                    </div>
+                            <div class="col-6" id="section-skills">
+                                <h1 class="text-center">Skills</h1>
+                                <div class="container-fluid" id="container-skills">
+                                    <dl>
+                                        <dt>Desarrollo:</dt>
+                                        <dd><img class="img col-2" id="skill-html" src="img/html5.svg">
+                                            <img class="img col-2" src="img/javascript.svg">
+                                            <img class="img col-2" src="img/css3.svg">
+                                        </dd>
+                                        <dt>Framework:</dt>
+                                        <dd>
+                                            <img class="img col-2" src="img/bootstrap-5-1.svg">
+                                        </dd>
+                                        <dt>Tools:</dt>
+                                        <dd>
+                                            <img class="img col-2" src="img/git.svg">
+                                            <img class="img col-2" src="img/visual-studio-code-1.svg">
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
                 </div>
-                <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label text-light">Mensaje:</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </section>
+            <section class="container-fluid col-10 float-end" id="section-proyectos">
+                <div class="row">
+                    <div id="carouselExampleControls" class="carousel slide col-12 container" data-bs-ride="carousel">
+                        <h1 class="text-center">Portafolios/Proyectos</h1>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="img/AppWork.png" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/Gomeria2000.png" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/WeatherApp.png" class="d-block w-100" alt="...">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" id="previous-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" id="next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
                 </div>
-                <button class="btn bg-dark text-light">Enviar</button>
-            </div>
-        </section>
-
-        <footer class="container" id="footer">
-            <div class="row">
-                <p class="text-center">Hecho por Joaquín Orozco</p>
-            </div>    
-        </footer>
-
+            </section>
+            <section class="container-fluid col-10 float-end" id="section-contacto">
+                <h1 class="text-center">Contáctame</h1>
+                <div class="row col-6" id="container-contacto">
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label text-light">Email:</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label text-light">Mensaje:</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                    <button class="btn bg-dark text-light">Enviar</button>
+                </div>
+            </section>
+  
         <!-- JavaScript Bundle with Popper -->
         <script src="https://unpkg.com/scrollreveal"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
