@@ -283,8 +283,33 @@ body{
     #header a:hover{
         font-size: 41px;
         transition: .2s;
-        text-shadow:10px -20px 5px #ff637dd3;
     } 
+
+    /* -------------------------------- */
+    /* -----------root----------------- */
+    /* -------------------------------- */
+
+    #root{
+        position: absolute;
+        display: block;
+    }
+
+    /* -------------------------------- */
+    /* -----------Section inicio------- */
+    /* -------------------------------- */
+    #section-inicio{
+        position: relative;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    #seccion-incio h1{
+        color: #ff637d;
+        font-size: 85px;
+        font-weight: bolder;
+        margin-top: 35%;
+    }
  }
 
 
