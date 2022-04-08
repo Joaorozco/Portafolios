@@ -73,7 +73,6 @@ function ajax(url, metodo="get") {
     })
     
 })();
-
 // ------------------------------------------------------------
 // ------------------------------------------------------------
 // ---------------------ANIMATION------------------------------
@@ -131,4 +130,22 @@ ScrollReveal().reveal(sectionContacto,{
     }
 })
 
+// ----------------------------
+// NavBar(phone)
+// ----------------------------
+let btnToggle = document.querySelector('.toggle-btn');
+let navHeader = document.querySelector('#header');
+let btnClose = document.querySelector('.close-btn');
+console.log(btnClose);
 
+btnToggle.addEventListener('click',function(){
+    navHeader.style.display = 'block';
+
+    setTimeout(function(){
+        navHeader.style.display = 'none'
+    },5000)
+})
+
+btnClose.addEventListener('click', function(){
+    navHeader.style.display = 'none'
+})
